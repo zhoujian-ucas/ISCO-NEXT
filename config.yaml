@@ -1,0 +1,34 @@
+# 基本配置
+model_path: "models/sam_vit_h_4b8939.pth"
+output_dir: "results"
+batch_size: 16
+log_level: "INFO"
+
+# 性能优化配置
+performance:
+  num_workers: 4  # 进程数
+  gpu_device: "cuda:0"  # GPU设备
+  cache_dir: ".cache"  # 缓存目录
+  cache_size: 1000  # 最大缓存条目数
+  
+  # GPU相关配置
+  gpu_enabled: true
+  gpu_memory_fraction: 0.8  # GPU内存使用比例
+  
+  # 环境配置
+  conda_env: "organoid-analysis"
+  cuda_version: "11.3"
+  
+  # 批处理配置
+  batch_size: 16
+  prefetch_factor: 2  # 预加载批次数
+
+# 时间序列分析配置
+time_series:
+  enabled: true
+  input_dir: "data/time_series"
+  time_format: "%Y%m%d_%H%M"  # 时间戳格式
+  analysis:
+    min_time_points: 3  # 最少时间点数
+    interpolation: true  # 是否进行插值
+    smoothing: true  # 是否平滑数据 

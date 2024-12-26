@@ -1,0 +1,8 @@
+type: organoid
+name: spheroid
+config:
+  size_range: [100, 1000]  # μm
+  sphericity_threshold: 0.8
+  analysis_params:
+    surface_smoothing: true
+    smoothing_sigma: 1.0 
