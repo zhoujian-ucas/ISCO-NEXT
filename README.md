@@ -85,15 +85,5 @@
 4. 推送到分支：`git push origin feature/your-feature-name`
 5. 创建一个 Pull Request。
 
-## 许可证
-
-本项目采用 MIT 许可证。详情请参阅 [LICENSE](LICENSE) 文件。
-
-## 支持
-
-如果您在使用过程中遇到问题，或者有任何建议，请通过 [GitHub Issues](https://github.com/yourusername/organoid-analysis-tool/issues) 联系我们。
-
-## 参考文献
-
-- [Organoid Research](https://www.nature.com/subjects/organoids)
-- [Image Segmentation Models](https://arxiv.org/abs/2003.10580) 
+## 引用我们的文章
+https://www.biorxiv.org/content/10.1101/2024.12.24.630244v1
